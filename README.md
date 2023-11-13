@@ -1,5 +1,5 @@
 # SSP_Project
-Repozytorium dla projektu z przedmiotu Sieci Sterowane Programowo
+Repozytorium dla projektu z przedmiotu Sieci Sterowane Programowo  
 .  
 .  
 .  
