@@ -1,6 +1,9 @@
 # SSP_Project
 Repozytorium dla projektu z przedmiotu Sieci Sterowane Programowo  
 
+## Temat projektu
+### Wykrywanie ataków DDoS na podstawie analizy opóźnień pakietów. 
+
 ## Skład zespołu:
 * Jakub Sośniak  
 * Kamil Pokusa  
