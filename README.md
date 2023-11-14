@@ -1,6 +1,11 @@
 # SSP_Project
 Repozytorium dla projektu z przedmiotu Sieci Sterowane Programowo  
 
+## Topologia
+
+![image](https://github.com/BartoszKowal/SSP_Project/assets/56104920/993ce8a5-73b1-423f-9000-f9bdd046fa0a)
+
+
 ## Źródła
 1. 'Detection of Control Layer DDoS Attack using Entropy metrics in SDN: An Empirical Investigation'    
 Kshira Sagar Sahoo; Bibhudatta Sahoo; Manikanta Vankayala; Ratnakar Dash    
