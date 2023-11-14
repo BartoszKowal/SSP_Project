@@ -1,6 +1,13 @@
 # SSP_Project
 Repozytorium dla projektu z przedmiotu Sieci Sterowane Programowo  
 
+## Skład zespołu:
+* Jakub Sośniak  
+* Kamil Pokusa  
+* Bartosz Kowal  
+* Adam Zielina  
+
+
 ## Topologia
 
 ![image](https://github.com/BartoszKowal/SSP_Project/assets/56104920/993ce8a5-73b1-423f-9000-f9bdd046fa0a)
