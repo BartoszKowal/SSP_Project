@@ -15,6 +15,9 @@ Repozytorium dla projektu z przedmiotu Sieci Sterowane Programowo
 
 ![image](https://github.com/BartoszKowal/SSP_Project/assets/56104920/993ce8a5-73b1-423f-9000-f9bdd046fa0a)
 
+## Oprogramowanie wykorzystywane do przeprowadzania ataków
+
+Do symulowania ataków na serwer HTTP użyty zostanie program Scapy pozwalający na tworzenie i wysyłanie pakietów, takich jak pakiet ARP spoofing, pakiety ICMP flood, czy też inne ataki typowe dla różnych warstw modelu OSI.
 
 ## Źródła
 1. 'Detection of Control Layer DDoS Attack using Entropy metrics in SDN: An Empirical Investigation'    
