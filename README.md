@@ -51,7 +51,7 @@ https://sflow.org/developers/specifications.php
 2. Na podstawie zebranych danych buduje się profil normalnych opóźnień w sieci. Profil ten obejmuje statystyki dotyczące oczekiwanych wartości opóźnień w normalnych warunkach.  
 3. System ustala progi dla RTT.  
 4. System monitoruje opóźnienia pakietów w czasie rzeczywistym i porównuje je do wcześniej utworzonego profilu normalnego.  
-5. Jeśli opóźnienia przekraczają ustalone progi, system podejmuje działania w celu analizy bardziej szczegółowej sytuacji.
+5. Jeśli opóźnienia przekraczają ustalone progi, system podejmuje działania w celu analizy bardziej szczegółowej sytuacji. W momencie gdy zajdzie atak DDoS, podejęte będą odpowiednie kroki w celu zminimalizowania wpływu ataku.
 6. Profil normalnych opóźnień w sieci będzie dynamicznie aktualizowany, aby uwzględniać zmieniające się warunki ruchu i infrastruktury sieciowej.
 7. Reakcja na atak: Jeśli system uzna, że zachodzi atak DDoS (na podstawie przekroczenia progów opóźnień, po zaktualizowaniu), podejmuje odpowiednie kroki w celu zminimalizowania wpływu ataku.
 
