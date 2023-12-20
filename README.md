@@ -65,7 +65,7 @@ jest entropia opóźnienia. Zbyt wysoka wartość okna sprawdzania spowoduje wys
 przełoży się na reagowanie w zbyt długim czasie.  
 
  ///////////////////////////////////////////////////////////////////////////////////////////////////// 
-'''  
+```plaintext 
 defined_threshold = Y  
 defined_window_time = X  
 defined_threshold_release = Z
@@ -89,7 +89,7 @@ while(true)
         //Działaj dalej  
     }  
 }  
-'''  
+```
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ## Co klasyfikujemy jako DDoS? Jak będziemy wykrywać ataki? Co będziemy mierzyć i gdzie?
 
