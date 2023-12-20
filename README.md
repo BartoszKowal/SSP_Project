@@ -43,8 +43,53 @@ https://sflow.org/developers/specifications.php
 
 ## Pseudokod
 
+//definiowanie adresów grupy (chodzi o wybieranie tylko adresów zewnętrznych)  
+// definiowanie przepływów (standardowo)  
+// definiowanie thresholdów (Na przykład ilość pakietów w danym interwale, lub entropia)  
+
+whille(running){  
+  
+receive threshold event (przyjmowanie asynchronicznych akcji)  
+monitor flow (monitorowanie przepływu oraz jego parametrów zdefiniowanych przez threshold)  
+deploy control (zastosowanie akcji biorąc pod uwagę to co zwróci monitor flow [DDoS])  
+monitor flow (N-te monitorowanie przepływu sprawdzając czy zastosowana akcja zadziałała (dep control))  
+release control (Dezaktywowanie akcji deploy control na podstawie tego co zwróci monitor flow)  
+}  
+
+**Algorytm wykrywania DDoS na podstawie entropi:**  
 
 
+
+Należy określić optymalny czas monitorowania przepływu (zbierania danych), aby następnie określić jaka  
+jest entropia opóźnienia. Zbyt wysoka wartość okna sprawdzania spowoduje wysoką bezwładność systemu co   
+przełoży się na reagowanie w zbyt długim czasie.  
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////// 
+defined_threshold = Y  
+defined_window_time = X  
+defined_threshold_release = Z
+
+while(true)  
+{  
+    for(defined_window_time)  
+    {  
+    receive_event() <- receive threshold event  
+    measure_response_time()  
+    response_table = save_response()  
+    }  
+  
+    mesure_entropy(response_table)  
+  
+    if(mesure_entropy>defined_threshold)  
+    {  
+        //Uruchom algorytm usuwanai DDoS  
+    }  
+    else(mesure_entropy<defined_threshold_release)
+    {  
+        //Działaj dalej  
+    }  
+}  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 ## Co klasyfikujemy jako DDoS? Jak będziemy wykrywać ataki? Co będziemy mierzyć i gdzie?
 
 1. System zbiera informacje dotyczące opóźnień pakietów w sieci (pomiar czasu podróży (RTT) między różnymi węzłami sieciowymi).  
