@@ -65,6 +65,7 @@ jest entropia opóźnienia. Zbyt wysoka wartość okna sprawdzania spowoduje wys
 przełoży się na reagowanie w zbyt długim czasie.  
 
  ///////////////////////////////////////////////////////////////////////////////////////////////////// 
+'''  
 defined_threshold = Y  
 defined_window_time = X  
 defined_threshold_release = Z
@@ -73,11 +74,10 @@ while(true)
 {  
     for(defined_window_time)  
     {  
-    receive_event() <- receive threshold event  
-    measure_response_time()  
-    response_table = save_response()  
+      receive_event() <- receive threshold event  
+      measure_response_time()  
+      response_table = save_response()  
     }  
-  
     mesure_entropy(response_table)  
   
     if(mesure_entropy>defined_threshold)  
@@ -89,6 +89,7 @@ while(true)
         //Działaj dalej  
     }  
 }  
+'''  
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ## Co klasyfikujemy jako DDoS? Jak będziemy wykrywać ataki? Co będziemy mierzyć i gdzie?
 
