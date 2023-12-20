@@ -100,6 +100,10 @@ while(true)
 5. Jeśli opóźnienia przekraczają ustalone progi, system podejmuje działania w celu analizy bardziej szczegółowej sytuacji. W momencie gdy zajdzie atak DDoS, podejęte będą odpowiednie kroki w celu zminimalizowania wpływu ataku.
 6. Profil normalnych opóźnień w sieci będzie dynamicznie aktualizowany, aby uwzględniać zmieniające się warunki ruchu i infrastruktury sieciowej.
 7. Reakcja na atak: Jeśli system uzna, że zachodzi atak DDoS (na podstawie przekroczenia progów opóźnień, po zaktualizowaniu), podejmuje odpowiednie kroki w celu zminimalizowania wpływu ataku.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+## Wykres przedstawiający momenty wyłączania przepływów pochodzących od atakujących
+![wkres_entropia](https://github.com/BartoszKowal/SSP_Project/assets/56132686/bc124692-5f02-4d86-8e11-2e19eeb13748)
+
 
 
 
