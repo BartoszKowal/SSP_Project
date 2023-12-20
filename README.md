@@ -45,9 +45,7 @@ https://sflow.org/developers/specifications.php
 
 
 
-## Co klasyfikujemy jako DDoS? 
-## Jak będziemy wykrywać ataki?
-## Co będziemy mierzyć i gdzie
+## Co klasyfikujemy jako DDoS? Jak będziemy wykrywać ataki? Co będziemy mierzyć i gdzie?
 
 1. System zbiera informacje dotyczące opóźnień pakietów w sieci (pomiar czasu podróży (RTT) między różnymi węzłami sieciowymi).  
 2. Na podstawie zebranych danych buduje się profil normalnych opóźnień w sieci. Profil ten obejmuje statystyki dotyczące oczekiwanych wartości opóźnień w normalnych warunkach.  
