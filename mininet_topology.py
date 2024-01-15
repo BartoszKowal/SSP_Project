@@ -4,6 +4,10 @@ from mininet.cli import CLI
 import sys
 
 def create_sdn_network(controller_ip='127.0.0.1', controller_port=6633):
+    """
+    Example of useage
+        sudo python mininet_topology.py 192.168.0.103 6653
+    """
     # Create Mininet object
     net = Mininet(controller=Controller, switch=OVSSwitch)
 
