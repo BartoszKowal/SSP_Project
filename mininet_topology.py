@@ -1,7 +1,6 @@
 from mininet.net import Mininet
-from mininet.node import Controller, OVSSwitch
+from mininet.node import Controller, OVSSwitch, RemoteController
 from mininet.cli import CLI
-
 import sys
 
 def create_sdn_network(controller_ip='127.0.0.1', controller_port=6633):
@@ -10,7 +9,7 @@ def create_sdn_network(controller_ip='127.0.0.1', controller_port=6633):
 
     # Add external controller if specified
     if controller_ip != '127.0.0.1':
-        c0 = net.addController('c0', controller=Controller, ip=controller_ip, port=controller_port)
+        c0 = net.addController('c0', controller=RemoteController, ip=controller_ip, port=controller_port)
     else:
         c0 = net.addController('c0')
 
@@ -51,4 +50,10 @@ def create_sdn_network(controller_ip='127.0.0.1', controller_port=6633):
     net.stop()
 
 if __name__ == '__main__':
-    create_sdn_network()
+    # Check if controller IP and port are provided as command-line arguments
+    if len(sys.argv) == 3:
+        controller_ip = sys.argv[1]
+        controller_port = int(sys.argv[2])
+        create_sdn_network(controller_ip, controller_port)
+    else:
+        create_sdn_network()
